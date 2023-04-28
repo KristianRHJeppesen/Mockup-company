@@ -23,14 +23,20 @@
   <body>
     <header>
       <nav>
-        <ul>
+        <a
+          onclick="document.getElementById('nav-menu').style='display: flex'; return false"
+          class="nav-menu-icon"
+          href=""
+          ><i class="fa-solid fa-bars"></i
+        ></a>
+        <ul id="nav-menu" class="nav-menu">
           <li><a href="Index.html" class="nav-btn">Mockup Company</a></li>
           <li><a href="Index.html" class="nav-btn">Home</a></li>
           <li><a href="#" class="nav-btn">Product</a></li>
           <li><a href="#" class="nav-btn">Solutions</a></li>
           <li><a href="#" class="nav-btn">About</a></li>
           <li><a href="#" class="nav-btn">Pricing</a></li>
-          <li>
+          <li class="nav-btn-big-container">
             <a
               onclick="document.getElementById('login-form').style='display: flex'; return false"
               href="#"
@@ -38,7 +44,7 @@
               >Log in</a
             >
           </li>
-          <li>
+          <li class="nav-btn-big-container">
             <a href="" class="btn dark nav-btn-big">Get Started</a>
           </li>
         </ul>

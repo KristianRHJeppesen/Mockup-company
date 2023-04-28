@@ -57,15 +57,29 @@ header {
   justify-content: center;
 }
 
+.nav-menu-icon {
+  color: rgb(228, 232, 239);
+  display: none;
+  margin-bottom: 7px;
+}
+
+.nav-menu {
+  color: rgb(228, 232, 239);
+  margin-bottom: 7px;
+  top: 0px;
+}
+
+.nav-btn-big-container {
+  margin: 0px 10px;
+}
+
 nav {
-  height: 50px;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
   position: fixed;
   top: 0px;
   z-index: 4;
   padding: 10px 10px;
-  display: flex;
-  justify-content: end;
+  align-self: flex-start;
 }
 
 ul {
@@ -127,7 +141,8 @@ form input {
 /*LOG IN SLUT*/
 
 .header {
-  width: 560px;
+  width: 100%;
+  max-width: 560px;
   margin-top: 20px;
 }
 
@@ -196,10 +211,14 @@ form input {
 .our-mission-photo-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 22.8px;
+  width: 100%;
+  max-width: 528px;
+  margin: 0px 25px;
 }
 
 .our-mission-photo {
+  object-fit: scale-down;
   transition: all 250ms ease-in-out;
 }
 
@@ -210,7 +229,7 @@ form input {
 }
 
 .our-mission-article {
-  width: 700px;
+  max-width: 700px;
 }
 
 .our-mission-wrapper {
@@ -218,7 +237,6 @@ form input {
   justify-content: space-between;
   align-items: center;
   max-width: 1000px;
-  gap: 115px;
 }
 
 .meet-our-leader {
@@ -286,7 +304,8 @@ form input {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
 }
 
 .meet-our-leader2-tekst {
@@ -308,7 +327,8 @@ form input {
 }
 
 .were-hiring-content {
-  width: 1080px;
+  width: 100%;
+  max-width: 1080px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -337,4 +357,54 @@ footer {
 .footer-a-container a {
   text-decoration: none;
   color: black;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 20px 30px;
+  }
+
+  nav a.nav-btn {
+    text-decoration: none;
+    transition: all 150ms ease-in-out;
+    color: rgb(228, 232, 239);
+    padding-bottom: 5px;
+    border-bottom: 0px solid aqua;
+  }
+
+  nav ul {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .nav-menu-icon {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .our-mission-wrapper {
+    flex-direction: column;
+  }
+
+  .meet-our-leader-container {
+    flex-direction: column;
+  }
+
+  .meet-our-leader2-content {
+    flex-direction: column;
+  }
+
+  .meet-our-leader2-content img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
 }
