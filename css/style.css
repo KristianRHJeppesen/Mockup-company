@@ -61,6 +61,7 @@ header {
   color: rgb(228, 232, 239);
   display: none;
   margin-bottom: 7px;
+  margin-top: 5px;
 }
 
 .nav-menu {
@@ -73,8 +74,12 @@ nav i {
   font-size: 3rem;
 }
 
+.nav-btn-big-wrapper {
+  display: flex;
+}
+
 .nav-btn-big-container {
-  margin: 0px 10px;
+  margin: 10px 10px;
 }
 
 nav {
@@ -84,6 +89,7 @@ nav {
   z-index: 4;
   padding: 10px 10px;
   align-self: center;
+  display: flex;
 }
 
 ul {
@@ -95,6 +101,7 @@ nav ul {
   display: flex;
   gap: 24px;
   align-items: center;
+  margin-right: 24px;
 }
 nav ul li:nth-child(1) {
   margin-right: auto;
@@ -196,6 +203,10 @@ form input {
 .light:hover {
   background-color: rgb(180, 180, 186);
   color: rgb(39, 39, 39);
+}
+
+.nav-btn-big {
+  min-width: max-content;
 }
 
 .nav-btn-big:hover {
@@ -373,16 +384,25 @@ footer {
     height: 48px;
     display: flex;
     gap: 24px;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
+    padding-top: 60px;
   }
 
   nav {
     align-self: flex-start;
+    width: 100%;
+    right: 0px;
+    justify-content: space-between;
   }
 
   .nav-menu-icon {
     display: block;
+    padding: 0px 30px;
+  }
+
+  .nav-btn-big {
+    right: 0px;
   }
 
   .nav-menu {
